@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teafactory.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="537.0">
+         <image>
+            <Image url="@../assets/Login.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="587.0" layoutX="565.0" layoutY="32.0" opacity="0.58" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="432.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#02c39a" />
+                  <Stop color="#02c39a" offset="0.007662835249042145" />
+                  <Stop color="#25e138" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="lglLogin" layoutX="704.0" layoutY="68.0" text="Login">
+         <font>
+            <Font name="Bell MT Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c41e0e" />
+                  <Stop color="#c41e0e" offset="0.007662835249042145" />
+                  <Stop color="#111699" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblUserName" layoutX="614.0" layoutY="176.0" text="UserName" textFill="#130707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword" layoutX="618.0" layoutY="269.0" text="Password" textFill="#1e0606">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="615.0" layoutY="208.0" prefHeight="39.0" prefWidth="346.0" style="-fx-background-radius: 10;" />
+      <PasswordField fx:id="txtPassword" layoutX="615.0" layoutY="301.0" prefHeight="39.0" prefWidth="346.0" style="-fx-background-radius: 10;" />
+      <Button id="btnLogin" fx:id="btnLogin" layoutX="615.0" layoutY="395.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="346.0" styleClass="btn" stylesheets="@../assets/css/style.css" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
