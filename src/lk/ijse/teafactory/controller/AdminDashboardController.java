@@ -2,8 +2,11 @@ package lk.ijse.teafactory.controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class AdminDashboardController {
     public JFXButton btnCustomers;
@@ -15,7 +18,8 @@ public class AdminDashboardController {
     public Label lblAdminDashboard;
     public AnchorPane pane;
 
-    public void btnHomeOnAction(ActionEvent actionEvent) {
+    public void btnHomeOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("HomeForm");
     }
 
     public void btnSuppliersOnAction(ActionEvent actionEvent) {
@@ -33,4 +37,8 @@ public class AdminDashboardController {
     public void btnCustomersOnAction(ActionEvent actionEvent) {
     }
 
+    public void setUi(String URL) throws IOException {
+        AnchorPane pane1= FXMLLoader.load(getClass().getResource("../view/" + URL + ".fxml"));
+        pane.getChildren().setAll(pane1);
+    }
 }
