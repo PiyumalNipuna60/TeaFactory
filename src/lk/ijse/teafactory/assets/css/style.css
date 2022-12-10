@@ -1,13 +1,14 @@
-.btn{
-    -fx-background-color:  #00A896;
+.btn {
+    -fx-background-color: #00A896;
 }
-.btn:hover{
+
+.btn:hover {
     -fx-background-color: #047717;
     -fx-border-color: 2px solid white;
     -fx-border-radius: 20px;
 }
 
-#btnLogin:hover{
+#btnLogin:hover {
     -fx-background-color: #047717;
     -fx-border-color: 2px solid red;
     -fx-border-radius: 20px;

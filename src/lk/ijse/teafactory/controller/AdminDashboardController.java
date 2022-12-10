@@ -38,7 +38,7 @@ public class AdminDashboardController {
     }
 
     public void setUi(String URL) throws IOException {
-        AnchorPane pane1= FXMLLoader.load(getClass().getResource("../view/" + URL + ".fxml"));
+        AnchorPane pane1 = FXMLLoader.load(getClass().getResource("../view/" + URL + ".fxml"));
         pane.getChildren().setAll(pane1);
     }
 }
