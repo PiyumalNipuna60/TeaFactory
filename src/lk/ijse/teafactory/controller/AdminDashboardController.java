@@ -17,6 +17,7 @@ public class AdminDashboardController {
     public JFXButton btnHome;
     public Label lblAdminDashboard;
     public AnchorPane pane;
+    public JFXButton btnLogin;
 
     public void btnHomeOnAction(ActionEvent actionEvent) throws IOException {
         setUi("HomeForm");

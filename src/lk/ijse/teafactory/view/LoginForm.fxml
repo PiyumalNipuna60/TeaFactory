@@ -1,67 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.*?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-            minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0"
-            xmlns="http://javafx.com/javafx/18" fx:controller="lk.ijse.teafactory.controller.LoginFormController">
+
+<AnchorPane fx:id="pane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #52B788;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teafactory.controller.LoginFormController">
     <children>
-        <ImageView fitHeight="650.0" fitWidth="537.0">
-            <image>
-                <Image url="@../assets/Login.jpg"/>
-            </image>
-        </ImageView>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" height="587.0" layoutX="565.0" layoutY="32.0" opacity="0.58"
-                   stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="432.0">
-            <fill>
-                <LinearGradient endX="1.0" endY="1.0">
-                    <stops>
-                        <Stop color="#02c39a"/>
-                        <Stop color="#02c39a" offset="0.007662835249042145"/>
-                        <Stop color="#25e138" offset="1.0"/>
-                    </stops>
-                </LinearGradient>
-            </fill>
-        </Rectangle>
-        <Label fx:id="lglLogin" layoutX="704.0" layoutY="68.0" text="Login">
-            <font>
-                <Font name="Bell MT Bold" size="48.0"/>
-            </font>
-            <textFill>
-                <LinearGradient endX="1.0" endY="1.0">
-                    <stops>
-                        <Stop color="#c41e0e"/>
-                        <Stop color="#c41e0e" offset="0.007662835249042145"/>
-                        <Stop color="#111699" offset="1.0"/>
-                    </stops>
-                </LinearGradient>
-            </textFill>
-        </Label>
-        <Label fx:id="lblUserName" layoutX="614.0" layoutY="176.0" text="UserName" textFill="#130707">
-            <font>
-                <Font size="18.0"/>
-            </font>
-        </Label>
-        <Label fx:id="lblPassword" layoutX="618.0" layoutY="269.0" text="Password" textFill="#1e0606">
-            <font>
-                <Font size="18.0"/>
-            </font>
-        </Label>
-        <TextField fx:id="txtUserName" layoutX="615.0" layoutY="208.0" prefHeight="39.0" prefWidth="346.0"
-                   style="-fx-background-radius: 10;"/>
-        <PasswordField fx:id="txtPassword" layoutX="615.0" layoutY="301.0" prefHeight="39.0" prefWidth="346.0"
-                       style="-fx-background-radius: 10;"/>
-        <Button id="btnLogin" fx:id="btnLogin" layoutX="615.0" layoutY="395.0" mnemonicParsing="false"
-                onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="346.0" styleClass="btn"
-                stylesheets="@../assets/css/style.css" text="Login">
-            <font>
-                <Font size="18.0"/>
-            </font>
-        </Button>
+        <Pane layoutX="283.0" layoutY="114.0" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00704a" height="550.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                <Label layoutX="102.0" layoutY="225.0" text="HERITAGE " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="117.0" layoutY="278.0" text="CEYLON " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="157.0" layoutY="331.0" text="TEA" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="420.0" layoutY="124.0" text="LOGIN " textFill="#00704a">
+                    <font>
+                        <Font name="System Bold" size="36.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtUserName" focusColor="#00704a" layoutX="426.0" layoutY="266.0" prefHeight="25.0" prefWidth="334.0" promptText="User Name " />
+                <Button fx:id="btnLogin" layoutX="426.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="334.0" style="-fx-background-color: #00704a;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="420.0" layoutY="177.0" text="Welcome to Heritage Ceylon Tea Official System. ">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="420.0" layoutY="197.0" text="Enter your credentials to get started. ">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <JFXPasswordField fx:id="txtPassword" focusColor="#00704a" layoutX="426.0" layoutY="345.0" prefHeight="25.0" prefWidth="334.0" promptText="Password" />
+                <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="85.0" layoutY="124.0">
+                    <image>
+                        <Image url="@../assets/Logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
     </children>
 </AnchorPane>
