@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -8,65 +8,61 @@
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.*?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pane" prefHeight="650.0" prefWidth="1024.0"
-            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lk.ijse.teafactory.controller.AdminDashboardController">
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="691.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teafactory.controller.AdminDashboardController">
     <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#02bb93" height="650.0" stroke="BLACK" strokeType="INSIDE"
-                   strokeWidth="0.0" width="250.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#02bb93" height="691.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Rectangle>
         <Label fx:id="lblAdminDashboard" layoutX="23.0" layoutY="26.0" text="Admin Dashboard" textAlignment="CENTER">
             <font>
-                <Font name="System Bold" size="24.0"/>
+                <Font name="System Bold" size="24.0" />
             </font>
             <textFill>
                 <LinearGradient endX="1.0" endY="1.0">
                     <stops>
-                        <Stop color="#031a46"/>
-                        <Stop color="#031a46" offset="0.007662835249042145"/>
-                        <Stop color="#7256b2" offset="1.0"/>
+                        <Stop color="#031a46" />
+                        <Stop color="#031a46" offset="0.007662835249042145" />
+                        <Stop color="#7256b2" offset="1.0" />
                     </stops>
                 </LinearGradient>
             </textFill>
         </Label>
-        <JFXButton fx:id="btnHome" layoutX="46.0" layoutY="99.0" onAction="#btnHomeOnAction" prefHeight="39.0"
-                   prefWidth="135.0" text="Home" textFill="#35012c">
+        <JFXButton fx:id="btnHome" layoutX="46.0" layoutY="99.0" onAction="#btnHomeOnAction" prefHeight="39.0" prefWidth="135.0" text="Home" textFill="#35012c">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </JFXButton>
-        <JFXButton fx:id="btnSuppliers" layoutX="46.0" layoutY="183.0" onAction="#btnSuppliersOnAction"
-                   prefHeight="39.0" prefWidth="135.0" text="Suppliers" textFill="#35012c">
+        <JFXButton fx:id="btnSuppliers" layoutX="46.0" layoutY="183.0" onAction="#btnSuppliersOnAction" prefHeight="39.0" prefWidth="135.0" text="Suppliers" textFill="#35012c">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </JFXButton>
-        <JFXButton fx:id="btnProducts" layoutX="46.0" layoutY="254.0" onAction="#btnProductsOnAction" prefHeight="39.0"
-                   prefWidth="135.0" text="Products" textFill="#35012c">
+        <JFXButton fx:id="btnProducts" layoutX="46.0" layoutY="254.0" onAction="#btnProductsOnAction" prefHeight="39.0" prefWidth="135.0" text="Products" textFill="#35012c">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </JFXButton>
-        <JFXButton fx:id="btnOrders" layoutX="46.0" layoutY="392.0" onAction="#btnOrdersOnAction" prefHeight="39.0"
-                   prefWidth="135.0" text="Orders" textFill="#35012c">
+        <JFXButton fx:id="btnOrders" layoutX="46.0" layoutY="392.0" onAction="#btnOrdersOnAction" prefHeight="39.0" prefWidth="135.0" text="Orders" textFill="#35012c">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </JFXButton>
-        <JFXButton fx:id="btnStocks" layoutX="46.0" layoutY="477.0" onAction="#btnStocksOnAction" prefHeight="39.0"
-                   prefWidth="135.0" text="Stocks" textFill="#35012c">
+        <JFXButton fx:id="btnStocks" layoutX="46.0" layoutY="477.0" onAction="#btnStocksOnAction" prefHeight="39.0" prefWidth="135.0" text="Stocks" textFill="#35012c">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </JFXButton>
-        <JFXButton fx:id="btnCustomers" layoutX="46.0" layoutY="325.0" onAction="#btnCustomersOnAction"
-                   prefHeight="39.0" prefWidth="135.0" text="Customers" textFill="#35012c">
+        <JFXButton fx:id="btnCustomers" layoutX="46.0" layoutY="325.0" onAction="#btnCustomersOnAction" prefHeight="39.0" prefWidth="135.0" text="Customers" textFill="#35012c">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </JFXButton>
         <ImageView fitHeight="556.0" fitWidth="744.0" layoutX="259.0" layoutY="52.0">
             <image>
-                <Image url="@../assets/Owner.png"/>
+                <Image url="@../assets/Owner.png" />
             </image>
         </ImageView>
     </children>
