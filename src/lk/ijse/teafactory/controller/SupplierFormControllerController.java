@@ -75,6 +75,10 @@ public class SupplierFormControllerController {
     }
 
     public void btnclearOnAction(ActionEvent actionEvent) {
+      clearMethod();
+    }
+
+    private void clearMethod() {
 
     }
 

@@ -42,4 +42,9 @@ public class AdminDashboardController {
         AnchorPane pane1 = FXMLLoader.load(getClass().getResource("../view/" + URL + ".fxml"));
         pane.getChildren().setAll(pane1);
     }
+
+    public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("LoginForm");
+    }
+
 }
