@@ -3,10 +3,13 @@ package lk.ijse.teafactory.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class SupplierFormControllerController {
     public AnchorPane pane;
@@ -73,5 +76,10 @@ public class SupplierFormControllerController {
 
     public void btnclearOnAction(ActionEvent actionEvent) {
 
+    }
+
+    public void setUi(String URL) throws IOException {
+        AnchorPane load = FXMLLoader.load(getClass().getResource("../view/" + URL + ".fxml"));
+        pane.getChildren().setAll(load);
     }
 }

@@ -10,6 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <AnchorPane fx:id="pane" prefHeight="691.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.teafactory.controller.AdminDashboardController">
     <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#02bb93" height="691.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0">
