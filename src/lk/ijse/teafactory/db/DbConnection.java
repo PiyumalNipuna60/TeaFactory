@@ -21,7 +21,7 @@ public class DbConnection {
         }
     }
 
-    private Connection getConnection(){
+    public Connection getConnection(){
         return connection;
     }
 }
