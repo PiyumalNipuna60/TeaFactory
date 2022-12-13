@@ -22,5 +22,7 @@ public class LoginFormController {
     public void btnLoginOnAction(ActionEvent actionEvent) throws IOException {
         AnchorPane load = FXMLLoader.load(getClass().getResource("../view/AdminDashboardForm.fxml"));
         pane.getChildren().setAll(load);
+
+
     }
 }
