@@ -35,6 +35,7 @@ public class SupplierFormControllerController {
     }
 
     public void btnAddSupplierOnAction(ActionEvent actionEvent) {
+
     }
 
     public void txtSearchOnAction(ActionEvent actionEvent) {

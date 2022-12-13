@@ -22,7 +22,8 @@ public class AdminDashboardController {
         setUi("HomeForm");
     }
 
-    public void btnSuppliersOnAction(ActionEvent actionEvent) {
+    public void btnSuppliersOnAction(ActionEvent actionEvent) throws IOException {
+        setUi("SupplierForm");
     }
 
     public void btnProductsOnAction(ActionEvent actionEvent) {
